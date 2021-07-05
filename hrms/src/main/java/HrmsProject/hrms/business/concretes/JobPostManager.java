@@ -12,15 +12,20 @@ import HrmsProject.hrms.core.utilities.results.SuccessDataResult;
 import HrmsProject.hrms.core.utilities.results.SuccessResult;
 import HrmsProject.hrms.dataaccess.abstracts.JobPostDao;
 import HrmsProject.hrms.entities.concretes.JobPost;
+import HrmsProject.hrms.validation.abstracts.CandicateValidationService;
+import HrmsProject.hrms.validation.abstracts.MailValidationService;
 
 @Service
 public class JobPostManager implements JobPostService{
 
 	private JobPostDao jobPostDao;
 	
+	
+	
 	@Autowired
-	public JobPostManager(JobPostDao jobPostDao) {
-		super();
+	public JobPostManager(JobPostDao jobPostDao,CandicateValidationService candicateValidationService
+			, MailValidationService mailValidationService) {
+		
 		this.jobPostDao = jobPostDao;
 		
 		

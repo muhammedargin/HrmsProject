@@ -6,13 +6,13 @@ import org.springframework.stereotype.Service;
 
 import HrmsProject.hrms.core.utilities.results.DataResult;
 import HrmsProject.hrms.core.utilities.results.Result;
-import HrmsProject.hrms.entities.concretes.JobPost;
+import HrmsProject.hrms.entities.concretes.Candicate;
 
 @Service
-public interface JobPostService{
+public interface CandicateService {
 	
-	DataResult<List<JobPost>> getAll();
+	Result add(Candicate candicate);
 	
-	Result add(JobPost jobPost);
+	DataResult<List<Candicate>> getAll();
 
 }
