@@ -8,8 +8,8 @@ public interface CandicateCheckService {
 	boolean nameAndSurnameCheck(Candicate candicate);
 	boolean regexMailCheck(Candicate candicate);
 	boolean unusedMailCheck(Candicate candicate);
-	boolean nationalityIdCheck(Candicate candicate);
 	boolean passwordLengthCheck(Candicate candicate);
-	boolean passwordRepeatCheck(Candicate caandicate);
+	boolean nationalityIdCheck(Candicate candicate);
+	boolean passwordRepeatCheck(Candicate candicate);
 	Result allCheck(Candicate candicate);
 }

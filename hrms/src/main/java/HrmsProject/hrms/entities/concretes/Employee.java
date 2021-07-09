@@ -26,7 +26,7 @@ public class Employee {
 	private String firstName;
 	@Column(name="employee_lastName")
 	private String lastName;
-	@Column(name="employee_eMail")
+	@Column(name="employee_e_mail")
 	private String eMail;
 
 }

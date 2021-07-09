@@ -26,11 +26,13 @@ public class Employer {
 	private String employerName;
 	@Column(name="employer_website")
 	private String employerWebsite;
-	@Column(name="employer_eMail")
+	@Column(name="employer_e_mail")
 	private String eMail;
 	@Column(name="employer_phone")
 	private String employerPhoneNumber;
 	@Column(name="employer_password")
 	private String password;
+	@Column(name="employer_password2")
+	private String password2;
 
 }

@@ -1,6 +1,7 @@
 package HrmsProject.hrms.core.utilities.check;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+
+
 
 import HrmsProject.hrms.core.utilities.check.Abstract.CandicateCheckService;
 import HrmsProject.hrms.core.utilities.results.ErrorResult;
@@ -24,13 +25,8 @@ if (candicateCheckService.nullCheck(candicate)) {
 				 if (candicateCheckService.unusedMailCheck(candicate)) {
 					 
 					 if (candicateCheckService.passwordLengthCheck(candicate)) {
-						 if (candicateCheckService.passwordRepeatCheck(candicate)) {
-							
+						 
 							 return new SuccessResult("Tüm alanlar doğrulandı");
-						}
-						 else {
-							return new ErrorResult("Parolalar eşleşmedi."); 
-						}
 						
 					}
 					 else {
